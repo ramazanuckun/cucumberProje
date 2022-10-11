@@ -11,6 +11,19 @@ public class BrcPage {
     }
     @FindBy(xpath = "//a[normalize-space()='Login']")
     public WebElement login;
+    @FindBy(xpath = "(//*[@role='button'])[1]")
+    public WebElement loginButton;
+    @FindBy(xpath = "//input[@id='formBasicEmail']")
+    public WebElement emailButton;
+    @FindBy(xpath = "//input[@id='formBasicPassword']")
+    public WebElement paswordButton;
+    @FindBy(xpath = "(//*[.=' Login'])[5]")
+    public WebElement emailPaswordOnay;
+    @FindBy(xpath = "//button[@id='dropdown-basic-button']")
+    public WebElement anaSayfa;
+    @FindBy(xpath = "(//*[text()=' Login'])[2]")
+    public WebElement ikinciLogin;
 
-
+    public static class AutomationPage {
+    }
 }
